@@ -1,0 +1,9 @@
+* text=auto
+*.ps1 text eol=lf
+*.sh text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.zip binary
+# Android theme archives have no file extension.
+ClassicSettingsIcon/resources/default/icons binary
+ClassicSettingsIcon/resources/default/dynamicicons binary

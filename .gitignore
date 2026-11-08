@@ -1,0 +1,9 @@
+# Generated module folders and installable ZIPs
+**/dist/
+
+# Local editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
