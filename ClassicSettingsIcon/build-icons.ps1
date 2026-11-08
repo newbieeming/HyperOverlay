@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 $root = $PSScriptRoot
 $out = Join-Path $root 'dist/classic-settings-module'
@@ -90,7 +90,7 @@ if (Test-Path $archivePath) { Remove-Item -LiteralPath $archivePath }
 $package = [IO.Compression.ZipFile]::Open($archivePath, [IO.Compression.ZipArchiveMode]::Create)
 try {
     Get-ChildItem $out -Recurse -File | ForEach-Object {
-        $relative = [IO.Path]::GetRelativePath($out, $_.FullName).Replace('\', '/')
+        $relative = $_.FullName.Substring($out.Length + 1).Replace('\', '/')
         [IO.Compression.ZipFileExtensions]::CreateEntryFromFile($package, $_.FullName, $relative) | Out-Null
     }
 } finally { $package.Dispose() }

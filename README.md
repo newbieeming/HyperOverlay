@@ -8,7 +8,7 @@ KernelSU 系统资源覆盖模块集合，每个模块在独立目录内维护�
 
 ## 构建
 
-使用 PowerShell 7，在仓库根目录运行：
+使用 Windows PowerShell 5.1 或 PowerShell 7，在仓库根目录运行：
 
 ```powershell
 ./ClassicSettingsIcon/build-icons.ps1

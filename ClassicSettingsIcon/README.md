@@ -6,7 +6,7 @@
 
 ## 构建
 
-使用 PowerShell 7，在项目目录运行：
+使用 Windows PowerShell 5.1 或 PowerShell 7，在项目目录运行：
 
 ```powershell
 ./build-icons.ps1
